@@ -11,3 +11,4 @@ A tech enthusiast and fresher, exploring the realms of programming, machine lear
 ![](https://github-readme-stats.vercel.app/api?username=sohmxdd&theme=radical&hide_border=false&include_all_commits=true&count_private=false)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=sohmxdd&theme=radical&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=sohmxdd&theme=radical&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
+![GitHub Contribution Snake](https://github.com/sohmxdd/sohmxdd/blob/output/github-contribution-grid-snake.svg)
