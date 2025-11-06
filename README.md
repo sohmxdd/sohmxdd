@@ -14,4 +14,7 @@ A tech enthusiast and fresher, exploring the realms of programming, machine lear
 ![GitHub Contribution Snake](https://github.com/sohmxdd/sohmxdd/blob/output/github-contribution-grid-snake.svg)
 ![Soham’s GitHub Stats](https://github-readme-stats.vercel.app/api?username=sohmxdd&show_icons=true&theme=tokyonight)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sohmxdd&layout=compact&theme=tokyonight)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=sohmxdd.sohmxdd)
+⏱️ Last Updated: {{ last_update }}
+
 
