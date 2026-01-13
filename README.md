@@ -1,4 +1,4 @@
-## Hi 👋, I'm Soham Mishra<br>
+## Hey! I'm Soham Mishra<br>
 A tech enthusiast and fresher, exploring the realms of programming, machine learning, and space technology. I enjoy creating cinematic projects, solving challenges, and beating people at Clash Royale! 🚀
 
 
