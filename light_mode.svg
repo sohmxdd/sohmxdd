@@ -7,25 +7,25 @@
   </style>
   <rect width="985" height="520" rx="18" style="fill:#f5f5f5"/>
   <text font-family="monospace" letter-spacing="1" style="fill:#2e2e2e">
-    <tspan x="45" y="90">      .                     .      </tspan>
-    <tspan x="45" y="110">     .::.                 .::.     </tspan>
-    <tspan x="45" y="130">    .::::.               .::::.    </tspan>
-    <tspan x="45" y="150">   .::::::.             .::::::.   </tspan>
-    <tspan x="45" y="170">  .::::::::.           .::::::::.  </tspan>
-    <tspan x="45" y="190">   .::::::::.         .::::::::.   </tspan>
-    <tspan x="45" y="210">    .::::::::.       .::::::::.    </tspan>
-    <tspan x="45" y="230">     .::::::::.     .::::::::.     </tspan>
-    <tspan x="45" y="250">      .::::::::.   .::::::::.      </tspan>
-    <tspan x="45" y="270">       .::::::::. .::::::::.       </tspan>
-    <tspan x="45" y="290">        .:::::::::::::::::.        </tspan>
-    <tspan x="45" y="310">         .:::::::::::::::.         </tspan>
-    <tspan x="45" y="330">          .:::::::::::::.          </tspan>
-    <tspan x="45" y="350">           .:::::::::::.           </tspan>
-    <tspan x="45" y="370">            .:::::::::.            </tspan>
-    <tspan x="45" y="390">             .:::::::.             </tspan>
-    <tspan x="45" y="410">              .:::::.              </tspan>
-    <tspan x="45" y="430">               .:::.               </tspan>
-    <tspan x="45" y="450">                .:.                </tspan>
+    <tspan x="45" y="90">               ......              </tspan>
+    <tspan x="45" y="110">            ..::::::::..           </tspan>
+    <tspan x="45" y="130">          .::::::::::::::.         </tspan>
+    <tspan x="45" y="150">         .::::::::::::::::.        </tspan>
+    <tspan x="45" y="170">        .:::::.        .::.        </tspan>
+    <tspan x="45" y="190">        .:::::.                    </tspan>
+    <tspan x="45" y="210">        .::::::.                   </tspan>
+    <tspan x="45" y="230">         .::::::.                  </tspan>
+    <tspan x="45" y="250">          .::::::::.               </tspan>
+    <tspan x="45" y="270">            .::::::::.             </tspan>
+    <tspan x="45" y="290">               .::::::::.          </tspan>
+    <tspan x="45" y="310">                 .::::::.          </tspan>
+    <tspan x="45" y="330">                    .::::::.       </tspan>
+    <tspan x="45" y="350">                     .:::::.       </tspan>
+    <tspan x="45" y="370">        .::.        .:::::.        </tspan>
+    <tspan x="45" y="390">         .::::::::::::::::.        </tspan>
+    <tspan x="45" y="410">          .::::::::::::::.         </tspan>
+    <tspan x="45" y="430">            ..::::::::..           </tspan>
+    <tspan x="45" y="450">               ......              </tspan>
   </text>
   <text x="390" y="75">
     <tspan x="390" id="header_title" style="fill:#2f6fbd">soham@localhost</tspan>
