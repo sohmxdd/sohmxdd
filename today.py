@@ -99,8 +99,8 @@ def graph_commits(start_date, end_date) -> int:
             }
         }"""
         variables = {
-            "start_date": current_start.isoformat().replace("+00:00", "Z"),
-            "end_date": current_end.isoformat().replace("+00:00", "Z"),
+            "start_date": current_start.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "end_date": current_end.strftime("%Y-%m-%dT%H:%M:%SZ"),
             "login": USER_NAME,
         }
         data = simple_request("graph_commits", query, variables).json().get("data")
