@@ -169,12 +169,12 @@ def recursive_loc(owner, repo_name, cursor=None, additions=0, deletions=0, commi
     """Recursively calculate LOC and commits for a repository."""
     QUERY_COUNT["recursive_loc"] += 1
     query = """
-    query($owner: String!, $repo_name: String!, $cursor: String) {
+    query($owner: String!, $repo_name: String!, $cursor: String, $author_id: ID) {
         repository(owner: $owner, name: $repo_name) {
             defaultBranchRef {
                 target {
                     ... on Commit {
-                        history(first: 100, after: $cursor) {
+                        history(first: 100, after: $cursor, author: {id: $author_id}) {
                             edges {
                                 node { additions deletions author { user { id } } }
                             }
@@ -185,7 +185,7 @@ def recursive_loc(owner, repo_name, cursor=None, additions=0, deletions=0, commi
             }
         }
     }"""
-    variables = {"owner": owner, "repo_name": repo_name, "cursor": cursor}
+    variables = {"owner": owner, "repo_name": repo_name, "cursor": cursor, "author_id": OWNER_ID}
     repo = simple_request("recursive_loc", query, variables).json()["data"][
         "repository"
     ]
@@ -204,17 +204,17 @@ def recursive_loc(owner, repo_name, cursor=None, additions=0, deletions=0, commi
             additions += int(node.get("additions", 0))
             deletions += int(node.get("deletions", 0))
 
-    if history["pageInfo"]["hasNextPage"]:
-        return recursive_loc(
-            owner,
-            repo_name,
-            history["pageInfo"]["endCursor"],
-            additions,
-            deletions,
-            commits,
-        )
+    if not history["edges"] or not history["pageInfo"]["hasNextPage"]:
+        return additions, deletions, commits
 
-    return additions, deletions, commits
+    return recursive_loc(
+        owner,
+        repo_name,
+        history["pageInfo"]["endCursor"],
+        additions,
+        deletions,
+        commits,
+    )
 
 
 def loc_pipeline():
@@ -289,8 +289,10 @@ def loc_pipeline():
         if cached_val and cached_val[0] == total_commits and total_commits > 0:
             # Commit count hasn't changed, use cached LOC stats
             _, my_commit, add, delete = cached_val
+            print(f"LOC (cached) for {name_with_owner}: {my_commit} commits")
         else:
             # Recalculate LOC stats
+            print(f"Fetching LOC (uncached) for {name_with_owner}...")
             try:
                 add, delete, my_commit = recursive_loc(owner, repo_name)
             except Exception as e:
