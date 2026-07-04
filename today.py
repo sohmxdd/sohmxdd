@@ -78,24 +78,42 @@ def simple_request(func_name: str, query: str, variables: dict) -> requests.Resp
 
 
 def graph_commits(start_date, end_date) -> int:
-    """Fetch total contributions between start_date and end_date."""
-    query = """
-    query($start_date: DateTime!, $end_date: DateTime!, $login: String!) {
-        user(login: $login) {
-            contributionsCollection(from: $start_date, to: $end_date) {
-                contributionCalendar { totalContributions }
+    """Fetch total contributions between start_date and end_date by looping through years."""
+    start_dt = datetime.datetime.fromisoformat(start_date.replace("Z", "+00:00"))
+    end_dt = datetime.datetime.fromisoformat(end_date.replace("Z", "+00:00"))
+
+    total_contributions = 0
+    current_start = start_dt
+
+    while current_start < end_dt:
+        current_end = current_start + relativedelta.relativedelta(years=1)
+        if current_end > end_dt:
+            current_end = end_dt
+
+        query = """
+        query($start_date: DateTime!, $end_date: DateTime!, $login: String!) {
+            user(login: $login) {
+                contributionsCollection(from: $start_date, to: $end_date) {
+                    contributionCalendar { totalContributions }
+                }
             }
+        }"""
+        variables = {
+            "start_date": current_start.isoformat().replace("+00:00", "Z"),
+            "end_date": current_end.isoformat().replace("+00:00", "Z"),
+            "login": USER_NAME,
         }
-    }"""
-    variables = {"start_date": start_date, "end_date": end_date, "login": USER_NAME}
-    data = simple_request("graph_commits", query, variables).json().get("data")
-    if not data or not data.get("user"):
-        return 0
-    return int(
-        data["user"]["contributionsCollection"]["contributionCalendar"][
-            "totalContributions"
-        ]
-    )
+        data = simple_request("graph_commits", query, variables).json().get("data")
+        if data and data.get("user"):
+            total_contributions += int(
+                data["user"]["contributionsCollection"]["contributionCalendar"][
+                    "totalContributions"
+                ]
+            )
+
+        current_start = current_end
+
+    return total_contributions
 
 
 def graph_repos_stars(count_type: str, owner_affiliation: list) -> int:
