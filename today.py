@@ -79,8 +79,8 @@ def simple_request(func_name: str, query: str, variables: dict) -> requests.Resp
 
 def graph_commits(start_date, end_date) -> int:
     """Fetch total contributions between start_date and end_date by looping through years."""
-    start_dt = datetime.datetime.fromisoformat(start_date.replace("Z", "+00:00"))
-    end_dt = datetime.datetime.fromisoformat(end_date.replace("Z", "+00:00"))
+    start_dt = datetime.datetime.fromisoformat(start_date.replace("Z", "+00:00")).replace(tzinfo=None)
+    end_dt = datetime.datetime.fromisoformat(end_date.replace("Z", "+00:00")).replace(tzinfo=None)
 
     total_contributions = 0
     current_start = start_dt
