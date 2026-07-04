@@ -11,12 +11,8 @@ PROFILE_CONFIG = {
     "DISPLAY_NAME": "Soham Mishra",
     "TERMINAL_HEADER": "soham@localhost",
     "BIRTHDAY": (2006, 8, 3),  # (year, month, day) -> 3rd August 2006
-    "ROLE": "AI Platform Engineer",
-    "COMPANY": "Autometa Labs",
-    "EDUCATION": "B.Tech Computer Science (Artificial Intelligence)",
     "UNIVERSITY": "DBS Global University",
-    "CURRENT_PROJECT": "Verdict",
-    "PRIMARY_FOCUS": "AI Systems Engineering",
+    "INTERESTS": "AI Systems, Agentic Security, Backend Infrastructure, Open Source",
     "LANGUAGES": "Python, TypeScript, C++, SQL, MongoDB",
     "FRAMEWORKS": "FastAPI, LangGraph, React, Docker, PostgreSQL, Redis",
 }
@@ -374,12 +370,8 @@ def svg_overwrite(
         # Update static profile configuration elements
         for config_key, elem_id in [
             ("TERMINAL_HEADER", "header_title"),
-            ("ROLE", "role_val"),
-            ("COMPANY", "company_val"),
-            ("EDUCATION", "education_val"),
             ("UNIVERSITY", "university_val"),
-            ("PRIMARY_FOCUS", "focus_val"),
-            ("CURRENT_PROJECT", "building_val"),
+            ("INTERESTS", "interests_val"),
             ("LANGUAGES", "languages_val"),
             ("FRAMEWORKS", "frameworks_val"),
         ]:
