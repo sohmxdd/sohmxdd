@@ -32,7 +32,7 @@
     <tspan x="390" dy="20" style="fill:#9e9e9e">----------------------------------------</tspan>
 
     <tspan x="390" dy="30">
-      <tspan class="key">Uptime:</tspan><tspan id="age_data" class="value" dx="12">19 years, 11 months, 2 days</tspan>
+      <tspan class="key">Uptime:</tspan><tspan id="age_data" class="value" dx="12">19 years, 11 months, 3 days</tspan>
     </tspan>
 
     <tspan x="390" dy="30">
