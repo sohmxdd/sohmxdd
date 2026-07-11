@@ -63,52 +63,52 @@
     <tspan x="20" y="481.9">=-------------==-::::::++=:::::::::-::::::::::::----:::::::::::::::::::--::::::-::::::::::::-:::::::</tspan>
     <tspan x="20" y="490.2">=--------------===--::-+=--::::::::::::::::::::::---::::::::::::::::::---::::::-:::::::::::-::::::::</tspan>
   </text>
-  <text x="480" y="100">
-    <tspan x="480" id="header_title" style="fill:#7aa2f7">soham@localhost</tspan>
-    <tspan x="480" dy="20" style="fill:#565f89">----------------------------------------</tspan>
+  <text x="540" y="100">
+    <tspan x="540" id="header_title" style="fill:#7aa2f7">soham@localhost</tspan>
+    <tspan x="540" dy="20" style="fill:#565f89">----------------------------------------</tspan>
 
-    <tspan x="480" dy="30">
+    <tspan x="540" dy="30">
       <tspan class="key">Uptime:</tspan><tspan id="age_data" class="value" dx="12">19 years, 11 months, 8 days</tspan>
     </tspan>
 
-    <tspan x="480" dy="30">
+    <tspan x="540" dy="30">
       <tspan class="key">University:</tspan><tspan id="university_val" class="value" dx="12">DBS Global University</tspan>
     </tspan>
 
-    <tspan x="480" dy="30">
+    <tspan x="540" dy="30">
       <tspan class="key">Interests:</tspan><tspan id="interests_val" class="value" dx="12">AI Systems, Agentic Security, Backend Infrastructure, Open Source</tspan>
     </tspan>
 
-    <tspan x="480" dy="30">
+    <tspan x="540" dy="30">
       <tspan class="key">Languages:</tspan><tspan id="languages_val" class="value" dx="12">Python, TypeScript, C++, SQL, MongoDB</tspan>
     </tspan>
 
-    <tspan x="480" dy="28">
+    <tspan x="540" dy="28">
       <tspan class="key">Frameworks:</tspan><tspan id="frameworks_val" class="value" dx="12">FastAPI, LangGraph, React, Docker, PostgreSQL, Redis</tspan>
     </tspan>
 
-    <tspan x="480" dy="32">
-      <tspan class="key">Repos:</tspan><tspan id="repo_data" class="value" dx="12">38</tspan>
+    <tspan x="540" dy="32">
+      <tspan class="key">Repos:</tspan><tspan id="repo_data" class="value" dx="12">0</tspan>
     </tspan>
 
-    <tspan x="480" dy="26">
-      <tspan class="key">Contributed:</tspan><tspan id="contrib_data" class="value" dx="12">577</tspan>
+    <tspan x="540" dy="26">
+      <tspan class="key">Contributed:</tspan><tspan id="contrib_data" class="value" dx="12">0</tspan>
     </tspan>
 
-    <tspan x="480" dy="26">
-      <tspan class="key">Commits:</tspan><tspan id="commit_data" class="value" dx="12">577</tspan>
+    <tspan x="540" dy="26">
+      <tspan class="key">Commits:</tspan><tspan id="commit_data" class="value" dx="12">0</tspan>
     </tspan>
 
-    <tspan x="480" dy="26">
-      <tspan class="key">Followers:</tspan><tspan id="follower_data" class="value" dx="12">13</tspan>
+    <tspan x="540" dy="26">
+      <tspan class="key">Followers:</tspan><tspan id="follower_data" class="value" dx="12">0</tspan>
     </tspan>
 
-    <tspan x="480" dy="26">
-      <tspan class="key">Stars:</tspan><tspan id="star_data" class="value" dx="12">19</tspan>
+    <tspan x="540" dy="26">
+      <tspan class="key">Stars:</tspan><tspan id="star_data" class="value" dx="12">0</tspan>
     </tspan>
 
-    <tspan x="480" dy="26">
-      <tspan class="key">LOC:</tspan><tspan id="loc_data" class="value" dx="12">281,528</tspan><tspan dx="12" style="fill:#bb9af7">(+309,728 / -28,200)</tspan>
+    <tspan x="540" dy="26">
+      <tspan class="key">LOC:</tspan><tspan id="loc_data" class="value" dx="12">0</tspan><tspan dx="12" style="fill:#bb9af7">(+0 / -0)</tspan>
     </tspan>
   </text>
 </svg>
