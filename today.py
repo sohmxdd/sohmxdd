@@ -17,7 +17,9 @@ PROFILE_CONFIG = {
     "FRAMEWORKS": "FastAPI, LangGraph, React, Docker, PostgreSQL, Redis",
 }
 
-USER_NAME = os.environ.get("USER_NAME", PROFILE_CONFIG["USERNAME"])
+USER_NAME = os.environ.get("USER_NAME")
+if not USER_NAME or USER_NAME.strip() == "":
+    USER_NAME = PROFILE_CONFIG["USERNAME"]
 ACCESS_TOKEN = os.environ.get("ACCESS_TOKEN")
 HEADERS = {"authorization": f"token {ACCESS_TOKEN}"} if ACCESS_TOKEN else {}
 
