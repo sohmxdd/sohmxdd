@@ -1,0 +1,43 @@
+name: README build
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 4 * * *"  # Fixed: Added missing asterisk - runs every day at 4 AM UTC
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Run script to update README
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          USER_NAME: ${{ secrets.USER_NAME }}
+        run: python today.py
+      - name: Debug - List generated files
+        run: |
+          echo "Files in directory:"
+          ls -la
+          echo "Git status:"
+          git status
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "github-actions-bot@example.com"
+          git config --global user.name "GitHub Actions Bot"
+          # Add all potentially generated files
+          git add README.md *.svg 2>/dev/null || git add README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Updated README and stats - $(date)"
+            git push
+          fi
