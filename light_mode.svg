@@ -52,27 +52,27 @@
     </tspan>
 
     <tspan x="390" dy="32">
-      <tspan class="key">Repos:</tspan><tspan id="repo_data" class="value" dx="12">38</tspan>
+      <tspan class="key">Repos:</tspan><tspan id="repo_data" class="value" dx="12">0</tspan>
     </tspan>
 
     <tspan x="390" dy="26">
-      <tspan class="key">Contributed:</tspan><tspan id="contrib_data" class="value" dx="12">574</tspan>
+      <tspan class="key">Contributed:</tspan><tspan id="contrib_data" class="value" dx="12">0</tspan>
     </tspan>
 
     <tspan x="390" dy="26">
-      <tspan class="key">Commits:</tspan><tspan id="commit_data" class="value" dx="12">574</tspan>
+      <tspan class="key">Commits:</tspan><tspan id="commit_data" class="value" dx="12">0</tspan>
     </tspan>
 
     <tspan x="390" dy="26">
-      <tspan class="key">Followers:</tspan><tspan id="follower_data" class="value" dx="12">13</tspan>
+      <tspan class="key">Followers:</tspan><tspan id="follower_data" class="value" dx="12">0</tspan>
     </tspan>
 
     <tspan x="390" dy="26">
-      <tspan class="key">Stars:</tspan><tspan id="star_data" class="value" dx="12">19</tspan>
+      <tspan class="key">Stars:</tspan><tspan id="star_data" class="value" dx="12">0</tspan>
     </tspan>
 
     <tspan x="390" dy="26">
-      <tspan class="key">LOC:</tspan><tspan id="loc_data" class="value" dx="12">281,439</tspan><tspan dx="12" style="fill:#7d5fff">(+309,353 / -27,914)</tspan>
+      <tspan class="key">LOC:</tspan><tspan id="loc_data" class="value" dx="12">0</tspan><tspan dx="12" style="fill:#7d5fff">(+0 / -0)</tspan>
     </tspan>
   </text>
 </svg>
