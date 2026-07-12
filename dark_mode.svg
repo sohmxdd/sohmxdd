@@ -68,7 +68,7 @@
     <tspan x="540" dy="20" style="fill:#565f89">----------------------------------------</tspan>
 
     <tspan x="540" dy="30">
-      <tspan class="key">Uptime:</tspan><tspan id="age_data" class="value" dx="12">19 years, 11 months, 8 days</tspan>
+      <tspan class="key">Uptime:</tspan><tspan id="age_data" class="value" dx="12">19 years, 11 months, 9 days</tspan>
     </tspan>
 
     <tspan x="540" dy="30">
@@ -88,15 +88,15 @@
     </tspan>
 
     <tspan x="540" dy="32">
-      <tspan class="key">Repos:</tspan><tspan id="repo_data" class="value" dx="12">38</tspan>
+      <tspan class="key">Repos:</tspan><tspan id="repo_data" class="value" dx="12">39</tspan>
     </tspan>
 
     <tspan x="540" dy="26">
-      <tspan class="key">Contributed:</tspan><tspan id="contrib_data" class="value" dx="12">578</tspan>
+      <tspan class="key">Contributed:</tspan><tspan id="contrib_data" class="value" dx="12">581</tspan>
     </tspan>
 
     <tspan x="540" dy="26">
-      <tspan class="key">Commits:</tspan><tspan id="commit_data" class="value" dx="12">578</tspan>
+      <tspan class="key">Commits:</tspan><tspan id="commit_data" class="value" dx="12">581</tspan>
     </tspan>
 
     <tspan x="540" dy="26">
