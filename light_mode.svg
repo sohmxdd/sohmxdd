@@ -68,7 +68,7 @@
     <tspan x="540" dy="20" style="fill:#9e9e9e">----------------------------------------</tspan>
 
     <tspan x="540" dy="30">
-      <tspan class="key">Uptime:</tspan><tspan id="age_data" class="value" dx="12">19 years, 11 months, 11 days</tspan>
+      <tspan class="key">Uptime:</tspan><tspan id="age_data" class="value" dx="12">19 years, 11 months, 12 days</tspan>
     </tspan>
 
     <tspan x="540" dy="30">
@@ -100,7 +100,7 @@
     </tspan>
 
     <tspan x="540" dy="26">
-      <tspan class="key">Followers:</tspan><tspan id="follower_data" class="value" dx="12">13</tspan>
+      <tspan class="key">Followers:</tspan><tspan id="follower_data" class="value" dx="12">15</tspan>
     </tspan>
 
     <tspan x="540" dy="26">
