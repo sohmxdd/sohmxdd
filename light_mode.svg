@@ -68,7 +68,7 @@
     <tspan x="540" dy="20" style="fill:#9e9e9e">----------------------------------------</tspan>
 
     <tspan x="540" dy="30">
-      <tspan class="key">Uptime:</tspan><tspan id="age_data" class="value" dx="12">20 years, 0 months, 8 days</tspan>
+      <tspan class="key">Uptime:</tspan><tspan id="age_data" class="value" dx="12">20 years, 0 months, 9 days</tspan>
     </tspan>
 
     <tspan x="540" dy="30">
@@ -88,15 +88,15 @@
     </tspan>
 
     <tspan x="540" dy="32">
-      <tspan class="key">Repos:</tspan><tspan id="repo_data" class="value" dx="12">42</tspan>
+      <tspan class="key">Repos:</tspan><tspan id="repo_data" class="value" dx="12">43</tspan>
     </tspan>
 
     <tspan x="540" dy="26">
-      <tspan class="key">Contributed:</tspan><tspan id="contrib_data" class="value" dx="12">850</tspan>
+      <tspan class="key">Contributed:</tspan><tspan id="contrib_data" class="value" dx="12">852</tspan>
     </tspan>
 
     <tspan x="540" dy="26">
-      <tspan class="key">Commits:</tspan><tspan id="commit_data" class="value" dx="12">850</tspan>
+      <tspan class="key">Commits:</tspan><tspan id="commit_data" class="value" dx="12">852</tspan>
     </tspan>
 
     <tspan x="540" dy="26">
@@ -108,7 +108,7 @@
     </tspan>
 
     <tspan x="540" dy="26">
-      <tspan class="key">LOC:</tspan><tspan id="loc_data" class="value" dx="12">328,608</tspan><tspan dx="12" style="fill:#7d5fff">(+366,180 / -37,572)</tspan>
+      <tspan class="key">LOC:</tspan><tspan id="loc_data" class="value" dx="12">328,608</tspan><tspan dx="12" style="fill:#7d5fff">(+366,182 / -37,574)</tspan>
     </tspan>
   </text>
 </svg>
